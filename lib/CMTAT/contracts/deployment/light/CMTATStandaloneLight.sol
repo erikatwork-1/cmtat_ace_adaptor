@@ -1,0 +1,28 @@
+//SPDX-License-Identifier: MPL-2.0
+
+pragma solidity ^0.8.20;
+
+import {CMTATBaseCore} from "../../modules/0_CMTATBaseCore.sol";
+import {ICMTATConstructor} from "../../interfaces/technical/ICMTATConstructor.sol";
+
+/**
+* @title CMTAT version for a standalone deployment (without proxy)
+*/
+contract CMTATStandaloneLight is CMTATBaseCore {
+    /**
+     * @notice Contract version for standalone light deployment
+     * @param admin address of the admin of contract (Access Control)
+     * @param ERC20Attributes_ ERC20 name, symbol and decimals
+     */
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor(
+        address admin,
+        ICMTATConstructor.ERC20Attributes memory ERC20Attributes_
+    ) {
+        // Initialize the contract to avoid front-running
+        initialize(
+            admin,
+            ERC20Attributes_
+        );
+    }
+}

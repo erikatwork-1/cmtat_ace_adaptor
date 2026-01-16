@@ -1,0 +1,151 @@
+# Foundry / Forge
+out/
+cache/
+broadcast/
+lcov.info
+
+# Hardhat
+node_modules/
+artifacts/
+cache_hardhat/
+typechain/
+typechain-types/
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+coverage.json
+.coverage_artifacts/
+.coverage_cache/
+.coverage_contracts/
+
+# Gas reports
+.gas-snapshot
+gas-report.txt
+
+# Solidity coverage
+coverage/
+coverageEnv/
+.coverage_artifacts/
+.coverage_cache/
+.coverage_contracts/
+
+# Test artifacts
+test-results/
+test-failures
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Documentation build artifacts (if using Sphinx, etc.)
+docs/_build/
+docs/.doctrees/
+
+# Python (if using any Python tooling)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# Certora
+.certora*/
+.last_confs/
+
+# Slither
+slither.db.json
+
+# Deployment artifacts (keep scripts, ignore logs)
+script/broadcast/**/dry-run/
+script/broadcast/**/*-latest.json
+
+# Keep example environment file
+!.env.example
+
+# Ignore flattened contracts
+flattened/
+flat/
+
+# Ignore local test databases
+test.db
+test.db-*
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# IDE - Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IDE - JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Subgraph artifacts
+subgraph/generated/
+subgraph/build/
+
+# Tenderly
+.tenderly/
+
+# Foundry local RPC artifacts
+.foundry/
+
+# Alchemy / Infura keys (just in case)
+*-alchemy-key.txt
+*-infura-key.txt
