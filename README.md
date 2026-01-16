@@ -1,6 +1,6 @@
 # CMTAT-ACE Integration
 
-A comprehensive integration solution that connects **CMTAT (Capital Markets and Technology Association)** tokens with **Chainlink's ACE (Access Control Engine)** PolicyEngine, offering **4 distinct implementation options** for maximum flexibility.
+A comprehensive integration solution that connects **CMTAT (Capital Markets and Technology Association)** tokens with **Chainlink's ACE** PolicyEngine, offering **4 distinct implementation options** for maximum flexibility.
 
 ## 🎯 Quick Overview
 
@@ -187,8 +187,6 @@ cmtat-ace-adapter/
 
 ## ✅ Testing
 
-All core contracts are fully tested:
-
 ```bash
 # Run all tests
 forge test
@@ -203,11 +201,6 @@ forge test --gas-report
 # Run with verbosity
 forge test -vvv
 ```
-
-**Test Results**:
-- ✅ ACERuleEngineAdapter: 32/32 tests passing
-- ✅ ACERule: 32/32 tests passing
-- ✅ >95% code coverage
 
 ## 🔑 Key Features
 
